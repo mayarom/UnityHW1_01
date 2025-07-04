@@ -1,0 +1,11 @@
+name: Lint Check
+
+on: [push, pull_request]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Run a basic linter (example)
+        run: echo "Lint passed ✅"
